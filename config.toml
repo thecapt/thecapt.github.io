@@ -1,5 +1,6 @@
+baseURL = "https://thecapt.github.io"
 languageCode = 'en-us'
-title = "Chris' Website"
+title = "Christopher Hofmann"
 theme = "hello-friend-ng"
 
 paginate     = 10
@@ -11,7 +12,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
+  homeSubtitle = "Computer Engineering student at TU Wien"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -20,13 +21,26 @@ paginate     = 10
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "My personal website"
   keywords = "homepage, blog"
   images = [""]
 
   [[params.social]]
     name = "github"
     url = "https://github.com/thecapt"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/ChrisHofmann99"
+  [[params.social]]
+    name = "email"
+    url = "mailto://chris-hofmann@hotmail.com"
+
+  [params.footer]
+    copyright = true
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "<a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">Theme</a>"
+    ]
 
 [taxonomies]
     category = "blog"
@@ -35,22 +49,26 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
     keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    # copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello friend ng"
+      logoText = "cd ~"
       logoHomeLink = "/"
+      logoCursorColor = "#67B0B8"
     # or
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
   # And you can even create generic menu
+  # [[menu.main]]
+  #   identifier = "blog"
+  #   name       = "Blog"
+  #   url        = "/posts"
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    identifier  = "github"
+    name        = "Github"
+    url         = "https://github.com/thecapt"
+
